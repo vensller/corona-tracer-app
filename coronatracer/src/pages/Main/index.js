@@ -4,12 +4,13 @@ import {
 } from 'react-native';
 
 import { Container, WelcomeDesc, WelcomeText } from './styles';
-import Button from '../../components/Button';
+import Button from '~/components/Button';
 
-import Home from '../../assets/img/home.png';
+import Home from '~/assets/img/home.png';
 
-export default function Main() {
-  function handlePressButton() {    
+export default function Main({navigation}) {
+  function handlePressButton() {
+    navigation.navigate('Permissions')
   }
 
   return (
@@ -23,3 +24,7 @@ export default function Main() {
     </Container>
   )
 };
+
+Main.navigationOptions = () => ({
+  header: () => false  
+})
