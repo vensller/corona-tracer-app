@@ -3,7 +3,8 @@ import {
   Image
 } from 'react-native';
 
-import { Container, WelcomeDesc, WelcomeText } from './styles';
+import { Container } from '~/global/styles';
+import { WelcomeDesc, WelcomeText } from './styles';
 import Button from '~/components/Button';
 
 import Home from '~/assets/img/home.png';
